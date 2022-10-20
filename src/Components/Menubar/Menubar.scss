@@ -1,0 +1,32 @@
+.menu{
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 85px;
+    right: -120%;
+    background-color: #fff;
+    transition: all .5s ease-in-out;
+    display: none;
+    box-shadow:inset  0 2px  2px #dadada;
+    padding: 2rem;
+
+    .menu_links{
+        padding-bottom: 2rem;
+        border-bottom: 2px solid #e0e0e0;
+        .m_link{
+            width: 100%;
+            font-size: 19px;
+            margin: 1rem 0;
+            font-weight: 300;
+            color: #000;
+        }
+    }
+
+    .m_sj{
+        margin: 2rem 0;
+    }
+
+    .find_store{
+        justify-content: flex-start;
+    }
+}

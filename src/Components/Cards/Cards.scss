@@ -1,0 +1,119 @@
+.card{
+    margin-top: 2rem !important;
+    background-color: #d4e9e2;
+    padding: 0 !important;
+    
+    .card_img , .card_d{
+        width: 50%;
+        object-fit: contain;
+    }
+    .card_d{
+        box-sizing: inherit;
+        text-align: center;
+        color: #1e3932;
+        padding: 2rem;
+
+        h1.title{
+            max-width: 70%;
+            font-size: 50px;
+            letter-spacing: 2px;
+        }
+        
+        .dis{
+            max-width: 70%;
+            margin: 2rem 0;
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 2.6rem;
+        }
+
+        .card_btn{
+            font-size: 18px;
+            transition: all .3s ease-in-out;
+
+            &:hover{
+                background-color: #25453e29;
+            }
+        }
+    }
+}
+
+.ulli{
+    .card_d{
+        align-items: flex-start;
+        text-align: start;
+        padding: 3rem;
+        
+        .dis{
+            max-width: 100% !important;
+        }
+        .title{
+            font-size: 26px !important;
+            max-width: 100% !important;
+        }
+        h1.c_title{
+            font-size: 19px !important;
+            font-weight: 300;
+            margin: 2rem 0;
+        }
+        ul{
+            li{
+                font-size: 19px;
+                margin: 1rem 0;
+            }
+        }
+    }
+}
+
+.bggreen{
+    background-color: green !important;
+    .title , .btn , .dis{
+        color: #fff;
+    }
+    .btn{
+        border-color: #fff;
+    }
+}
+
+
+// ************** Responsive **************
+
+@media screen and (max-width:1024px) {
+    .card{
+        .card_d{
+            h1.title{
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .card{
+        flex-direction: column !important;
+            .card_img,.card_d{
+                width: 100% !important;
+            }
+            .card_d{
+                padding: 2rem 1rem;
+            }
+            .dis{
+                max-width: 100% !important;
+                font-size: 22px !important;
+            }
+            .title{
+                max-width: 100% !important;
+            }
+    }
+    .ulli{
+        .dis{
+            h1.c_title{
+                font-size: 16px !important;
+            }
+            ul li{
+                font-size: 16px;
+                margin-left: 2rem;
+            }
+        }
+    }
+}

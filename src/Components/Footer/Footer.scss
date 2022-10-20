@@ -1,0 +1,116 @@
+.f_links {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 3rem;
+  padding: 3rem 0;
+  border-top: 2px solid #e0e0e0;
+  border-bottom: 2px solid #e0e0e0;
+
+  .f_box {
+    margin: 0 2rem;
+    align-items: flex-start;
+    .f_title {
+      margin-bottom: 2rem;
+      font-size: 19px;
+      font-weight: 400;
+    }
+    a {
+      width: 100%;
+      font-size: 16px;
+      font-weight: 300;
+      color: gray;
+      margin-top: 3rem;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+}
+
+.b_box {
+  padding: 2rem 0;
+  .s_links {
+    display: flex;
+    a {
+      color: #000;
+      margin-right: 1rem;
+      font-size: 30px;
+      box-shadow: 0 0 0 0 #a1a1a1;
+      border-radius: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: #dedede;
+        box-shadow: 0 0 0 10px #dedede;
+      }
+    }
+  }
+
+  .pp {
+    margin: 2rem 0;
+    a {
+      color: #000;
+      transition: all 0.3s ease-in-out;
+      font-size: 16px;
+      margin: 0 1rem;
+      padding-right: 1rem;
+      border-right: 2px solid #000;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    a:first-child {
+      margin-left: 0;
+    }
+    a:last-child {
+      border-right: none;
+    }
+  }
+
+  .cpyr {
+    color: gray;
+  }
+}
+
+// .df_box{
+//     padding: 3rem 1rem;
+//     border-top: 2px solid #e0e0e0;
+//     border-bottom: 2px solid #e0e0e0;
+
+//     .f_title{
+//         display: flex;
+//         width: 100%;
+//         justify-content: space-between;
+//         align-items: center;
+//         color: #000;
+//         font-size: 19px;
+//         font-weight: 400;
+//     }
+// }
+
+// ************** Responsive **************
+
+@media screen and (max-width: 1024px) {
+  .f_links {
+    display: none;
+  }
+  // .df_box{
+  //     display: flex !important;
+  // }
+  .pp {
+    flex-direction: column;
+    align-items: flex-start !important;
+    text-align: start;
+    a {
+      margin-left: 0 !important;
+      margin-top: 2rem !important;
+      border: none !important;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.df_box {
+  display: none !important;
+
+  padding: 3rem 1rem;
+  border-top: 2px solid #e0e0e0;
+  border-bottom: 2px solid #e0e0e0;
+
+  .f_title {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  .q {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .ans {
+    a {
+      width: 100%;
+      font-size: 16px;
+      font-weight: 300;
+      color: gray;
+      margin-top: 1rem;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .df_box {
+    display: flex !important;
+  }
+}

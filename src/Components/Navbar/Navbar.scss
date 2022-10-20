@@ -1,0 +1,167 @@
+nav{
+    height: 100px;
+    box-shadow: 0 2px  2px #dadada;
+    width: 100%;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 3;
+
+    .sign{
+        margin-right: 2rem;
+        &:hover{
+            background-color: #f3f1f1;
+        }
+    }
+    .join{
+        background-color: #000;
+        color: #fff;
+        &:hover{
+            background-color: #393838;
+        }
+    }
+
+    .find_store{
+        font-size: 16px;
+        font-weight: 500;
+        color: #000;
+        margin-right: 2rem;
+        transition: all .3s ease-in-out;
+
+        &:hover{
+            color: green;
+        }
+
+        span:first-child{
+            margin-right: .5rem;
+            font-size: 20px;
+            margin-top: .2rem;
+        }
+    }
+
+    #menubar{
+        width: 25px;
+        height: 20px;
+        position: relative;
+        transform: rotate(0deg);
+        transition: .5s ease-in-out;
+        cursor: pointer;
+      }
+      
+      #menubar span{
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background: gray;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+      }
+      
+      
+      /* Icon 3 */
+      
+      #menubar span:nth-child(1) {
+        top: 0px;
+      }
+      
+      #menubar span:nth-child(2),#menubar span:nth-child(3) {
+        top: 10px;
+      }
+      
+      #menubar span:nth-child(4) {
+        top: 20px;
+      }
+      
+      #menubar.open span:nth-child(1) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+      }
+      
+      #menubar.open span:nth-child(2) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+      
+      #menubar.open span:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+      }
+      
+      #menubar.open span:nth-child(4) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+      }
+      
+
+    #menubar{
+        display: none;
+    }
+
+    .links{
+        .logo{
+            width: 50px;
+            margin-right: 2rem;
+        }
+        .link{
+            margin: 0 1rem;
+            font-size: 14px;
+            font-weight: 700;
+            color: #000;
+            text-transform: uppercase;
+            letter-spacing: .1em;            transition: all .3s ease-in-out;
+
+            &:hover{
+                color: green;
+            }
+        }
+    }
+
+}
+
+
+
+// *********** Responsive ***********
+
+@media screen and (max-width:1024px) {
+   nav{
+    height: 85px;
+    padding: 0 1rem;
+
+    .logo{
+        margin-right: 1rem !important;
+    }
+    .links {
+        .link{
+            margin: 0 0.6rem;
+        }
+    }
+   }
+}
+
+@media screen and (max-width:775px) {
+   nav{
+    .links{
+        .link{
+            display: none;
+        }
+    }
+    .nav_right{
+        display: none;
+    }
+    #menubar{
+        display: block;
+    }
+    .menu{
+        display: block;
+    }
+   }
+}
